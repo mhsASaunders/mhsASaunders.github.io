@@ -79,7 +79,7 @@ function keyPressed() {
       //leftSquareY -= 5
     }
     if (keyIsDown(83)) {
-        spaceshipLeftY -=
+        spaceshipLeftY += 5
       //leftSquareY += 5
     }
   }
