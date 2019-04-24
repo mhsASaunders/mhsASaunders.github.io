@@ -111,8 +111,8 @@ function keyPressed() {
 function drawSquares() {
   //fill(75, 0, 130)
   //rect(leftX, leftY, size, size)
-  image(purple, leftX, leftY)
-  //image(purple, leftX, leftY, purple.width/2, purple.height/2)
+  //image(purple, leftX, leftY)
+  image(purple, leftX, leftY, purple.width/2, purple.height/2)
 
   fill(255, 255, 255)
   rect(rightX, rightY, size, size)
