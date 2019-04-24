@@ -34,7 +34,7 @@ function setup() {
 function draw() {
   background(0)
   frameRate(fr)
-  image(planet, 0, 0, planet.width/2, planet.height/2)
+  image(planet, 0, 0, planet.width/5, planet.height/5)
   fill(255)
   rect(0, 600, width, 10)
   //rules
