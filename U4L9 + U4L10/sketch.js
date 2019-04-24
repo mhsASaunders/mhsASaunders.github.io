@@ -17,13 +17,13 @@ let fr = 60
 //let mySound
 let planet
 let purple
-//let red
+let red
 
 function preload() {
    //mySound = loadSound('coin_drop.mp3')
    planet = loadImage('planet.png')
    purple = loadImage('leftSpaceship.png')
-   //red = loadImage('rightSpaceship.png')
+   red = loadImage('rightSpaceship.png')
  }
 
 
@@ -111,11 +111,11 @@ function keyPressed() {
 function drawSquares() {
   //fill(75, 0, 130)
   //rect(leftX, leftY, size, size)
-  //image(purple, leftX, leftY)
   image(purple, leftX, leftY, purple.width/2, purple.height/2)
 
-  fill(255, 255, 255)
-  rect(rightX, rightY, size, size)
+  //fill(255, 255, 255)
+  //rect(rightX, rightY, size, size)
+  image(red, rightX, rightY, red.width/2, red.height/2)
 }
 
 
