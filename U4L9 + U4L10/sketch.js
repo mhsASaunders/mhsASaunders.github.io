@@ -106,7 +106,7 @@ function keyPressed() {
 
 function drawPlayers() {
   image(ship, leftX, leftY, ship.width/2, ship.height/2)
-  image(star, rightX, rightY, star.width/2, star.height/2)
+  image(star, rightX, rightY, star.width/4, star.height/4)
 }
 
 
