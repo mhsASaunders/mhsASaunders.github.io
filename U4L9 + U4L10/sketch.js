@@ -1,6 +1,4 @@
 // global variables
-let size = 50
-
 let timerNum = 20
 
 
@@ -48,7 +46,8 @@ function draw() {
     mySound.play()
     }
 
-  hit = collideRectRect(leftX, leftY, size, size, rightX, rightY, size, size)
+  //set hitboxes
+  hit = collideRectRect(leftX, leftY, 50, 50, rightX, rightY, 50, 50)
 
   drawPlayers()
   keyPressed()
@@ -74,14 +73,14 @@ function keyPressed() {
         rightY -= 5
       }
     }
-    if (rightY <= 600 - size - 5) {
+    if (rightY <= 600 - 55) {
       if (keyIsDown(DOWN_ARROW)) {
         rightY += 5
       }
     }
 
     //move left square
-    if (leftX <= width - size) {
+    if (leftX <= width - 50) {
       if (keyIsDown(68)) { //'d' key
         leftX += 5
       }
@@ -96,7 +95,7 @@ function keyPressed() {
         leftY -= 5
       }
     }
-    if (leftY <= 600 - size - 5) {
+    if (leftY <= 600 - 55) {
       if (keyIsDown(83)) { //'s' key
         leftY += 5
       }
