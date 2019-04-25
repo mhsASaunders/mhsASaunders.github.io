@@ -58,9 +58,9 @@ function keyPressed() {
 
   if(hit === false && timerNum > 0) {  //checks if either player has won
     //move right square
-    if (rightX <= width - 40) {
+    if (rightX <= width - 50) {
       if (keyIsDown(RIGHT_ARROW)) {
-		      rightX += 5
+        rightX += 5
 	       }
         }
     if (rightX >= 0) {
