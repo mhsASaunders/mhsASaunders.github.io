@@ -48,7 +48,7 @@ function draw() {
     //mySound.play()
     }
 
-  hit = collideRectRect(leftX, leftY, size, size, rightX, rightY, size, size)
+  hit = collideRectRect(leftX, leftY, 90, size, rightX, rightY, size, size)
 
   drawPlayers()
   keyPressed()
