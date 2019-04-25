@@ -17,13 +17,11 @@ let mySound
 let ship
 let red
 
-/*
 function preload() {
    mySound = loadSound('coin_drop.mp3')
    ship = loadImage('spaceship.png')
    star = loadImage('star.png')
  }
-*/
 
 function setup() {
   createCanvas(800, 900)
@@ -110,9 +108,9 @@ function drawPlayers() {
   ellipse(rightX, rightY, 53, 53)
 
   imageMode(CORNER)
-  //image(ship, leftX, leftY, ship.width/2, ship.height/2)
+  image(ship, leftX, leftY, ship.width/2, ship.height/2)
   imageMode(CENTER)
-  //image(star, rightX, rightY, star.width/4, star.height/4)
+  image(star, rightX, rightY, star.width/4, star.height/4)
 }
 
 
