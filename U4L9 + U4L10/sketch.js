@@ -46,7 +46,7 @@ function draw() {
     //mySound.play()
     }
 
-  hit = collideRectCircle(leftX, leftY, 150, 120, rightX, rightY, 60, 60)
+  hit = collideRectCircle(leftX, leftY, 150, 120, rightX, rightY, 65, 65)
 
   drawPlayers()
   keyPressed()
@@ -57,9 +57,9 @@ function keyPressed() {
 
   if(hit === false && timerNum > 0) {  //checks if either player has won
     //move right square
-    if (rightX <= width - size) {
+    if (rightX <= width - 50) {
       if (keyIsDown(RIGHT_ARROW)) {
-		      rightX += 5
+        rightX += 5
 	       }
         }
     if (rightX >= 0) {
@@ -105,7 +105,7 @@ function keyPressed() {
 function drawPlayers() {
   //debug shapes - I used these to fix the hitboxes
   rect(leftX, leftY, 150, 120)
-  ellipse(rightX, rightY, 60, 60)
+  ellipse(rightX, rightY, 65, 65)
 
   imageMode(CORNER)
   image(ship, leftX, leftY, ship.width/2, ship.height/2)
