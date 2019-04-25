@@ -67,7 +67,7 @@ function keyPressed() {
         rightX -= 5
       }
     }
-    if (rightY >= 30) {
+    if (rightY >= 40) {
       if (keyIsDown(UP_ARROW)) {
         rightY -= 5
       }
@@ -94,7 +94,7 @@ function keyPressed() {
         leftY -= 5
       }
     }
-    if (leftY <= 600 - size - 5) {
+    if (leftY <= 450) {
       if (keyIsDown(83)) { //'s' key
         leftY += 5
       }
