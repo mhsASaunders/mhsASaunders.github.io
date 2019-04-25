@@ -33,7 +33,13 @@ function draw() {
   line(0, 595, 900, 595)
 
   //draw the score
-  text("leftScore", 50, 50)
+  fill(255)
+  textSize(100)
+  text(leftScore, 330, 100)
+
+  if (ballX => width) { //checks if a second has passed
+    leftScore += 1
+  }
 
   //draw the paddles
   rect(20, leftPaddleY, 2, 55)
