@@ -1,6 +1,6 @@
 // global variables
+let size = 50
 let timerNum = 20
-
 
 let leftX = 150
 let leftY = 300 - size
@@ -73,7 +73,7 @@ function keyPressed() {
         rightY -= 5
       }
     }
-    if (rightY <= 600 - 55) {
+    if (rightY <= 545) {
       if (keyIsDown(DOWN_ARROW)) {
         rightY += 5
       }
