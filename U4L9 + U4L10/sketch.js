@@ -18,13 +18,11 @@ let mySound
 let ship
 let red
 
-/*
 function preload() {
    mySound = loadSound('coin_drop.mp3')
    ship = loadImage('spaceship.png')
    star = loadImage('star.png')
  }
- */
 
 function setup() {
   createCanvas(800, 900)
@@ -44,10 +42,9 @@ function draw() {
   text("Player 2 is not it. Run from Player 2 until the timer runs out.", 10, 750)
 
   if(hit) {
-    background(100)
     textSize(100)
     text("PLAYER 1 WINS", 20, height/2.5)
-    //mySound.play()
+    mySound.play()
     }
 
   hit = collideRectCircle(leftX, leftY, size, size, rightX, rightY, 50)
@@ -111,8 +108,8 @@ function drawPlayers() {
   rect(leftX, leftY, size, size)
   ellipse(rightX, rightY, 50, 50)
 
-  //image(ship, leftX, leftY, ship.width/2, ship.height/2)
-  //image(star, rightX, rightY, star.width/2, star.height/2)
+  image(ship, leftX, leftY, ship.width/2, ship.height/2)
+  image(star, rightX, rightY, star.width/2, star.height/2)
 }
 
 
