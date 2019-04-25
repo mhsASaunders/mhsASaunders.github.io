@@ -67,7 +67,7 @@ function keyPressed() {
         rightX -= 5
       }
     }
-    if (rightY >= 0) {
+    if (rightY >= 0 + 20) {
       if (keyIsDown(UP_ARROW)) {
         rightY -= 5
       }
