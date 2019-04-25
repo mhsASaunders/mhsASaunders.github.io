@@ -1,5 +1,5 @@
 // global variables
-let size = 60
+let size = 70
 
 let timerNum = 20
 
