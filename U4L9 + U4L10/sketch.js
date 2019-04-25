@@ -44,8 +44,8 @@ function draw() {
   if(hit) {
     background(100)
     textSize(100)
-    text("PLAYER 1 WINS", width/2, height/2)
-    //mySound.play()
+    text("PLAYER 1 WINS", 20, height/2.5)
+    mySound.play()
     }
 
   hit = collideRectRect(leftX, leftY, size, size, rightX, rightY, size, size)
@@ -115,7 +115,7 @@ function timer() {
   textSize(100)
   text(timerNum, 330, 100)
 
-  if (frameCount % 60 === 0 && timerNum > 0) { //checks if a second has passed
+  if (frameCount % 60 === 0 && timerNum > 0 && hit === false) { //checks if a second has passed
     timerNum --
   }
   if (timerNum === 0) {
