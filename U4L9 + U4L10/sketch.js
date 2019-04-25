@@ -46,7 +46,7 @@ function draw() {
     //mySound.play()
     }
 
-  hit = collideRectCircle(leftX, leftY, 150, 120, rightX, rightY, 67, 67)
+  hit = collideRectCircle(leftX, leftY, 150, 120, rightX, rightY, 70, 70)
 
   drawPlayers()
   keyPressed()
@@ -67,7 +67,7 @@ function keyPressed() {
         rightX -= 5
       }
     }
-    if (rightY >= 20) {
+    if (rightY >= 30) {
       if (keyIsDown(UP_ARROW)) {
         rightY -= 5
       }
@@ -105,7 +105,7 @@ function keyPressed() {
 function drawPlayers() {
   //debug shapes - I used these to fix the hitboxes
   rect(leftX, leftY, 150, 120)
-  ellipse(rightX, rightY, 67, 67)
+  ellipse(rightX, rightY, 70, 70)
 
   imageMode(CORNER)
   image(ship, leftX, leftY, ship.width/2, ship.height/2)
