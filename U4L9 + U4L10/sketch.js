@@ -104,7 +104,7 @@ function keyPressed() {
 
 function drawPlayers() {
   //debug shapes - I used these to fix the hitboxes
-  rect(leftX, leftY + 40, 150, 80)
+  rect(leftX, leftY + 40, 150, 40)
   ellipse(rightX, rightY, 70, 70)
 
   imageMode(CORNER)
