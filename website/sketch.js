@@ -7,6 +7,6 @@ function preload() {
  }
 
 function draw() {
-  rect(100, 100, 100, 50)
+  background(0)
   image(home, 0, 0, home.width/2, home.height/2)
 }
