@@ -8,5 +8,5 @@ function preload() {
 
 function draw() {
   background(0)
-  image(home, 0, 0, home.width/1.5, home.height/1.5)
+  image(home, 0, 0, home.width/1.3, home.height/1.3)
 }
