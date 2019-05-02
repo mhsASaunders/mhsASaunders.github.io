@@ -10,14 +10,14 @@ function preload() {
  }
 
 function draw() {
-  if (level === 0) {
+  if (page === 0) {
     background(0)
    image(home, 0, 0, home.width/1.2, home.height/1.2)
    if (keyIsDown(ENTER)) {
       page += 1
     }
   }
-  if (level === 1) {
+  if (page === 1) {
     background(0)
     image(menu, 0, 0, home.width/1.2, home.height/1.2)
   }
