@@ -1,7 +1,7 @@
 /*
 snowman drawing
 ava saunders
-3/6/2019
+march 7th 2019
 */
 
 function setup() {
